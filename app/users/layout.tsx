@@ -1,8 +1,12 @@
-export default function UsersLayout({
+import { getUsers } from "./data";
+import UserExplorer from "./UserExplorer";
+
+export default async function UsersLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const users = await getUsers();
   return (
     <div className="min-h-screen bg-white px-6 py-10">
       <main className="mx-auto flex max-w-5xl flex-col gap-6">
@@ -13,7 +17,7 @@ export default function UsersLayout({
             name.
           </p>
         </header>
-        {children}
+        <UserExplorer users={users}>{children}</UserExplorer>
       </main>
     </div>
   );
