@@ -11,7 +11,7 @@ export default async function DummyList() {
   );
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-sky-50 via-white to-indigo-50">
+    <div className="min-h-screen bg-linear-to-b from-sky-50 via-white to-indigo-50">
       <main className="mx-auto flex max-w-6xl flex-col gap-12 px-6 py-16">
         <section className="grid gap-8 rounded-2xl bg-white/80 p-8 shadow-xl ring-1 ring-slate-200 backdrop-blur md:grid-cols-[1.3fr_1fr]">
           <div className="space-y-4">
@@ -29,29 +29,52 @@ export default async function DummyList() {
             <div className="flex flex-wrap items-center gap-4">
               <ContactButton label="Contact Us" />
               <span className="text-sm text-slate-500">
-                Prefer email? <a className="text-indigo-600 underline" href="mailto:hello@example.com">hello@example.com</a>
+                Prefer email?{" "}
+                <a
+                  className="text-indigo-600 underline"
+                  href="mailto:hello@example.com"
+                >
+                  hello@example.com
+                </a>
               </span>
             </div>
             <div className="flex flex-wrap gap-3 text-sm text-slate-600">
-              <span className="rounded-full bg-slate-100 px-3 py-1">Product strategy</span>
-              <span className="rounded-full bg-slate-100 px-3 py-1">UI/UX design</span>
-              <span className="rounded-full bg-slate-100 px-3 py-1">Engineering</span>
-              <span className="rounded-full bg-slate-100 px-3 py-1">Support</span>
+              <span className="rounded-full bg-slate-100 px-3 py-1">
+                Product strategy
+              </span>
+              <span className="rounded-full bg-slate-100 px-3 py-1">
+                UI/UX design
+              </span>
+              <span className="rounded-full bg-slate-100 px-3 py-1">
+                Engineering
+              </span>
+              <span className="rounded-full bg-slate-100 px-3 py-1">
+                Support
+              </span>
             </div>
           </div>
           <div className="space-y-4 rounded-xl bg-slate-900 p-6 text-slate-100 shadow-lg">
             <h2 className="text-xl font-semibold">What to expect</h2>
             <ul className="space-y-3 text-sm text-slate-200">
               <li className="flex gap-3">
-                <span className="mt-1 h-2 w-2 rounded-full bg-emerald-400" aria-hidden />
+                <span
+                  className="mt-1 h-2 w-2 rounded-full bg-emerald-400"
+                  aria-hidden
+                />
                 A short intro call to understand your goals.
               </li>
               <li className="flex gap-3">
-                <span className="mt-1 h-2 w-2 rounded-full bg-emerald-400" aria-hidden />
+                <span
+                  className="mt-1 h-2 w-2 rounded-full bg-emerald-400"
+                  aria-hidden
+                />
                 Clear timeline and pricing tailored to your needs.
               </li>
               <li className="flex gap-3">
-                <span className="mt-1 h-2 w-2 rounded-full bg-emerald-400" aria-hidden />
+                <span
+                  className="mt-1 h-2 w-2 rounded-full bg-emerald-400"
+                  aria-hidden
+                />
                 Dedicated team with weekly progress updates.
               </li>
             </ul>

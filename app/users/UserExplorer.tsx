@@ -1,8 +1,7 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useRouter } from "next/navigation";
-import UserDetailCard from "./[userId]/page";
 
 export type UserListItem = {
   id: number;
