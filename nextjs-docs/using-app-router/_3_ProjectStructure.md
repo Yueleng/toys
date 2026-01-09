@@ -51,3 +51,7 @@ Parameterize segments with square brackets. Use `[segment]` for a single param, 
 ### Opting for loading skeletons on a specific route
 
 ### Creating multiple root layouts
+
+To create multiple root layouts, remove the top-level `layout.js` file, and add a `layout.js` file inside each route group. This is useful for partitioning an application into sections that have a completely different UI or experience. The `<html>` and `<body>` tags need to be added to each root layout.
+
+![root layout](./photos/route-group-multiple-root-layouts.avif)
